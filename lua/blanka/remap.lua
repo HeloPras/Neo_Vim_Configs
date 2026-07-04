@@ -11,6 +11,8 @@ vim.keymap.set("n","<leader>pe",function ()
 	vim.diagnostic.goto_prev({float = true})
 end, {desc = 'Go to previous error and show float'})
 
+vim.keymap.set("n","gd",vim.lsp.buf.definition, {desc = "go definition"})
+
 vim.keymap.set("n", "<leader>tm", "<cmd>terminal<cr>", { noremap = true })
 
 vim.keymap.set("n", "<leader>ls", '<cmd>!firefox "%"<cr>', { desc = "Open file in firefox" })
