@@ -1,0 +1,11 @@
+vim.lsp.enable("ast-grep")
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("clangd")
+vim.lsp.enable("lua-language-server")
+vim.lsp.enable("pyright")
+vim.lsp.enable("deno")
+vim.lsp.enable("html-lsp")
+vim.lsp.enable("typescript-language-server")
+vim.lsp.enable("tailwindcss")
+
