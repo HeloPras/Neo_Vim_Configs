@@ -7,6 +7,7 @@ vim.keymap.set("n","<leader>ne",function ()
 end, {desc = 'Go to next error and show float'})
 
 
+
 vim.keymap.set("n","<leader>pe",function ()
 	vim.diagnostic.goto_prev({float = true})
 end, {desc = 'Go to previous error and show float'})
@@ -14,6 +15,11 @@ end, {desc = 'Go to previous error and show float'})
 vim.keymap.set('i',"(","()<Left>")
 vim.keymap.set('i',"{","{}<Left>")
 vim.keymap.set('i',"[","[]<Left>")
+vim.keymap.set('i',"'","''<Left>")
+vim.keymap.set('i','"','""<Left>')
+
+vim.keymap.set("n","vie","ggVG")
+
 
 vim.keymap.set("n","gd",vim.lsp.buf.definition, {desc = "go definition"})
 
