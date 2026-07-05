@@ -21,6 +21,12 @@ vim.keymap.set('i','"','""<Left>')
 vim.keymap.set("n","vie","ggVG")
 
 
+-- Normal mode: Toggle comment for the current line
+vim.keymap.set('n', '<C-/>', 'gcc', { remap = true, desc = 'Toggle comment line' })
+
+-- Visual mode: Toggle comment for the selected block
+vim.keymap.set('v', '<C-/>', 'gc', { remap = true, desc = 'Toggle comment selection' })
+
 vim.keymap.set("n","gd",vim.lsp.buf.definition, {desc = "go definition"})
 
 vim.keymap.set("n", "<leader>tm", "<cmd>terminal<cr>", { noremap = true })
