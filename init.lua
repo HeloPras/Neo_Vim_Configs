@@ -1,6 +1,11 @@
 vim.g.mapleader = " "
 vim.keymap.set("i","kj","<Esc>",{noremap = true})
 
+vim.opt.tabstop = 4      -- A tab visually takes up 4 spaces
+vim.opt.shiftwidth = 4   -- Indent operations move text by 4 spaces
+vim.opt.softtabstop = 4  -- Editing spaces behaves like a 4-space tab
+vim.opt.expandtab = false -- Transform literal tabs into spaces
+
 
 require("blanka")
 

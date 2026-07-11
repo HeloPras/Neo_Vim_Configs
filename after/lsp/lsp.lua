@@ -8,4 +8,5 @@ vim.lsp.enable("deno")
 vim.lsp.enable("html-lsp")
 vim.lsp.enable("typescript-language-server")
 vim.lsp.enable("tailwindcss")
-
+vim.lsp.enable("vtsls")
+vim.lsp.enable("eslint-lsp")
