@@ -4,6 +4,8 @@ vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
 
 
 
+
+
 -- error diagnostics
 vim.keymap.set("n","<leader>e",vim.diagnostic.open_float,{desc = "show line diagnostic"})
 vim.keymap.set("n","<leader>ne",function ()
