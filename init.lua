@@ -22,3 +22,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function(args)
+    require("conform").format({ bufnr = args.buf })
+  end,
+})
