@@ -24,3 +24,10 @@ end)
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, { desc = 'opens diagnostic in telescope' })
 
 vim.keymap.set('n', '<leader>qf', builtin.quickfix, { desc = "opens quick fix" })
+
+
+vim.keymap.set('n', '<leader>n', function()
+	vim.cmd.vsplit()
+	vim.cmd.wincmd("l")
+	builtin.find_files()
+end, { desc = "opens new window with telescope" })

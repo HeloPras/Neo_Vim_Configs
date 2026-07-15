@@ -39,16 +39,18 @@ vim.keymap.set('n', '<leader>wk', '<C-w>k', { desc = "go to up split" })
 vim.keymap.set('n', '<leader>wj', '<C-w>j', { desc = "go to down split" })
 
 
+-- vim's compound window controller
 
 
 
+-- select all
 vim.keymap.set("n", "vie", "ggVG", { desc = "select all" })
 
 
 
 -- Normal mode: Toggle comment for the current line
 vim.keymap.set('n', '<C-/>', 'gcc', { remap = true, desc = 'Toggle comment line' })
-vim.keymap.set('i', '<C-/>', 'gcc', { remap = true, desc = 'Toggle comment line' })
+vim.keymap.set('i', '<C-/>', 'kjgcca', { remap = true, desc = 'Toggle comment line' })
 
 -- Visual mode: Toggle comment for the selected block
 vim.keymap.set('v', '<C-/>', 'gc', { remap = true, desc = 'Toggle comment selection' })
