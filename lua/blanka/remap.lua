@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
+vim.keymap.set("t", "kj", [[<C-\><C-n>]], { noremap = true })
 
 
 
@@ -56,4 +57,4 @@ vim.keymap.set('i', '<C-/>', 'kjgcca', { remap = true, desc = 'Toggle comment li
 vim.keymap.set('v', '<C-/>', 'gc', { remap = true, desc = 'Toggle comment selection' })
 
 
-vim.keymap.set("n", "<leader>tm", "<cmd>terminal<cr>", { noremap = true })
+vim.keymap.set("n", "<leader>tm", "<cmd>ToggleTerm<cr>", { noremap = true })
