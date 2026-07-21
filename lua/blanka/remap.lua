@@ -4,9 +4,6 @@ vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
 vim.keymap.set("t", "kj", [[<C-\><C-n>]], { noremap = true })
 
 
-
-
-
 -- error diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "show line diagnostic" })
 vim.keymap.set("n", "<leader>ne", function()
@@ -26,9 +23,8 @@ vim.keymap.set('i', "{", "{}<Left>")
 vim.keymap.set('i', "[", "[]<Left>")
 vim.keymap.set('i', "'", "''<Left>")
 vim.keymap.set('i', '"', '""<Left>')
--- vim.keymap.set('i','<','<><Left>')
+-- vim.keymap.set('i','<','<><Left>') commented it so that auto completion of jsx works
 vim.keymap.set('i', '`', '``<Left>')
-
 
 
 -- vim's window controller
@@ -40,13 +36,8 @@ vim.keymap.set('n', '<leader>wk', '<C-w>k', { desc = "go to up split" })
 vim.keymap.set('n', '<leader>wj', '<C-w>j', { desc = "go to down split" })
 
 
--- vim's compound window controller
-
-
-
 -- select all
 vim.keymap.set("n", "vie", "ggVG", { desc = "select all" })
-
 
 
 -- Normal mode: Toggle comment for the current line
@@ -56,5 +47,11 @@ vim.keymap.set('i', '<C-/>', 'kjgcca', { remap = true, desc = 'Toggle comment li
 -- Visual mode: Toggle comment for the selected block
 vim.keymap.set('v', '<C-/>', 'gc', { remap = true, desc = 'Toggle comment selection' })
 
+-- global yanking and pasting keymaps
+vim.keymap.set({ 'v', 'n' }, 'Y', '"+y', { desc = 'global yanking' })
+vim.keymap.set({ 'v', 'n' }, 'P', '"+p', { desc = 'global yanking' })
 
+
+
+-- toggle term
 vim.keymap.set("n", "<leader>tm", "<cmd>ToggleTerm<cr>", { noremap = true })
