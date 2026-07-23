@@ -1,6 +1,7 @@
 require("toggleterm").setup({
 	size = 60,
 	direction = 'vertical',
+	auto_scroll = 'false',
 	winbar = {
 		enabled = false,
 		name_formatter = function(term) --  term: Terminal
