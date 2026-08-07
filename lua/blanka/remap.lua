@@ -4,6 +4,9 @@ vim.keymap.set("i", "kj", "<Esc>", { noremap = true })
 vim.keymap.set("t", "kj", [[<C-\><C-n>]], { noremap = true })
 
 
+-- buffer
+vim.keymap.set("n", "<leader>j", "<C-6>", { desc = "Go to last buffer" })
+
 -- error diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "show line diagnostic" })
 vim.keymap.set("n", "<leader>ne", function()
