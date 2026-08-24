@@ -10,13 +10,13 @@ vim.keymap.set("n", "<leader>j", "<C-6>", { desc = "Go to last buffer" })
 -- error diagnostics
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "show line diagnostic" })
 vim.keymap.set("n", "<leader>ne", function()
-	vim.diagnostic.goto_next({ float = true })
+	vim.diagnostic.goto_next({ float = true, severity = vim.diagnostic.severity.ERROR })
 end, { desc = 'Go to next error and show float' })
 
 
 
 vim.keymap.set("n", "<leader>pe", function()
-	vim.diagnostic.goto_prev({ float = true })
+	vim.diagnostic.goto_prev({ float = true, severity = vim.diagnostic.severity.ERROR })
 end, { desc = 'Go to previous error and show float' })
 
 
